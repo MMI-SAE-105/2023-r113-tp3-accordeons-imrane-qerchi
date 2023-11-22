@@ -12,15 +12,15 @@
     <div class="accordeon" x-data="{ openSection: null }">
       <section>
         <button @click="openSection === 1 ? openSection = null : openSection = 1">Bouton 1</button>
-        <p x-show="openSection === 1" x-transition:enter="transform origin-top" x-transition:enter-start="scale-y-0" x-transition:enter-end="scale-y-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
+        <p x-show="openSection === 1" x-transition.delay.250ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
       </section>
       <section>
         <button @click="openSection === 2 ? openSection = null : openSection = 2">Bouton 2</button>
-        <p x-show="openSection === 2" x-transition:enter="transform origin-top" x-transition:enter-start="scale-y-0" x-transition:enter-end="scale-y-100">Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
+        <p x-show="openSection === 2" x-transition.delay.250ms>Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
       </section>
       <section>
         <button @click="openSection === 3 ? openSection = null : openSection = 3">Bouton 3</button>
-        <p x-show="openSection === 3" x-transition:enter="transform origin-top" x-transition:enter-start="scale-y-0" x-transition:enter-end="scale-y-100">Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
+        <p x-show="openSection === 3" x-transition.delay.250ms>Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
       </section>
     </div>
   </body>
