@@ -5,29 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon avec x-collapse</title>
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
-    <div class="accordeon">
-      <section>
+    <div class="accordeon" x-data="{ openSection: null }">
+      <section x-data="isOpen1">
         <button @click="openSection === 1 ? openSection = null : openSection = 1">Bouton 1</button>
-        <div x-show="openSection === 1" x-collapse>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
-        </div>
+        <p x-show="openSection === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
       </section>
       <section>
         <button @click="openSection === 2 ? openSection = null : openSection = 2">Bouton 2</button>
-        <div x-show="openSection === 2" x-collapse>
-          <p>Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
-        </div>
+        <p x-show="openSection === 2" x-collapse>Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
       </section>
       <section>
         <button @click="openSection === 3 ? openSection = null : openSection = 3">Bouton 3</button>
-        <div x-show="openSection === 3" x-collapse>
-          <p>Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
-        </div>
+        <p x-show="openSection === 3" x-collapse>Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
       </section>
     </div>
   </body>
