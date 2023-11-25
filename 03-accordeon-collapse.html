@@ -10,5 +10,25 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon">
+      <section>
+        <button @click="openSection === 1 ? openSection = null : openSection = 1">Bouton 1</button>
+        <div x-show="openSection === 1" x-collapse>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
+        </div>
+      </section>
+      <section>
+        <button @click="openSection === 2 ? openSection = null : openSection = 2">Bouton 2</button>
+        <div x-show="openSection === 2" x-collapse>
+          <p>Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
+        </div>
+      </section>
+      <section>
+        <button @click="openSection === 3 ? openSection = null : openSection = 3">Bouton 3</button>
+        <div x-show="openSection === 3" x-collapse>
+          <p>Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
